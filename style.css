@@ -10,16 +10,18 @@ body {
 
 .Navbar {
     display: flex;
+    gap:2px;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
-    gap: 10px;
-    padding-bottom:10px ;
-    align-items: center;
-    border-bottom: 1px solid rgb(87, 86, 86);
-    position:sticky;
-    top: 0;
-    z-index: 1;
-    background-color: white;
+    padding-bottom: 10px;
+    border-bottom:solid black 1px;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    flex-grow: 1;
+    flex-basis: 5%;
+    background-color: white; 
     
 }
 
@@ -41,7 +43,7 @@ body {
 .Navbar__s2 input {
     border: none;
     align-items: center;
-    width: 93%;
+    width: 94%;
     padding: 10px;
     font-size: medium;
     outline: none;
