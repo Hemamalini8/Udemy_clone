@@ -43,8 +43,8 @@ body {
 .Navbar__s2 input {
     border: none;
     align-items: center;
-    width: 94%;
     padding: 10px;
+    width: 91%;
     font-size: medium;
     outline: none;
     background-color: transparent;
@@ -53,8 +53,10 @@ body {
 .Navbar__s3{
     display: flex;
     gap: 20px;
-    
     align-items: center;
+}
+.Navbar__s4{
+    display: none;
 }
 .My_Learning{
     position: relative;
@@ -76,7 +78,6 @@ body {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
-    padding: 10px;
     flex-direction:row;
     justify-content: space-between;
     border-bottom: rgb(87, 86, 86) solid 1px;
@@ -141,23 +142,29 @@ body {
 }
 .recommended p{
     margin-top: 5px;
+    font-size: larger;
 }
 .recommended__adv{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    
     flex-wrap: wrap;
-    
+    gap: 20px;
     
 }
 .recommended__adv-s1{
+    flex-grow: 1;
+    flex-basis:22% ;
     width: 300px;
     margin-bottom: 10px;
 }
 .recommended__adv-s1 img{
     width: 100%;
+    height: 60%;
     padding-bottom: 10px;
+}
+.p{
+    margin-bottom: 30px;
 }
 .topic{
     margin: 10px;
@@ -184,22 +191,44 @@ body {
     margin: 10px;
     padding: 10px;
 }
+.popular h1{
+    margin-bottom: 5px;
+}
+.popular p{
+    font-size: large;
+}
 .popular-s{
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis:20% ;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    justify-content: space-between;
 
 }
+.popular-ss{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.popular-s1,
+.popular-s2,
+.popular-s3,
+.popular-s4,
+.popular-s5,
+.popular-s6,
+.popular-s7,
+.popular-s8{
+    flex-grow: 1;
+    flex-basis: 22%;
+}
+
 .popular-s img{
-    width: 350px;
+    width: 100%;
     height: 200px;
     margin-bottom: 10px;
-}
+}  
+
 .footer{
     background-color: black;
     color: rgb(250, 248, 248);
@@ -223,4 +252,38 @@ body {
 }
 .footer__s2 p{
     font-size: x-small;
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 16px;
+    }
+    .Navbar__s2{
+        display: none;
+    }
+    .Navbar__s3{
+        display: none;
+    }
+    .Navbar__s4{
+        display: block;
+    }
+    .categories{
+        display: none;
+    }
+    .recommended__adv-s1{
+        flex-grow: 1;  
+        flex-basis: 40%;
+       
+    }
+    .popular-s1,
+    .popular-s2,
+    .popular-s3,
+    .popular-s4,
+    .popular-s5,
+    .popular-s6,
+    .popular-s7,
+    .popular-s8{
+        flex-basis: 35%;
+    }
+   
+    
 }
