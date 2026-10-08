@@ -76,6 +76,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    padding: 10px;
     flex-direction:row;
     justify-content: space-between;
     border-bottom: rgb(87, 86, 86) solid 1px;
@@ -87,7 +88,13 @@ body {
     padding: 10px;
     margin: 10px;
     border-radius: 30px;
-    
+    border: 1px solid rgb(108, 104, 104);
+    cursor: pointer;
+}
+.categories p:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 
 }
 .sale__adv{
@@ -104,12 +111,27 @@ body {
     width: 370px;
     padding: 20px;
     position: absolute;
-    top: 42px;
-    left: 42px;
+    top: 30px;
+    left: 38px;
+    border-radius: 10px;
     background-color: white;
+    animation-name: zoom;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transition: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transition: scale(1);
+        opacity: 1;
+    }
 }
 .sale__adv-add p{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .recommended{
     margin: 10px;
